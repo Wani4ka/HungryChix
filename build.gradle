@@ -1,6 +1,7 @@
 plugins {
     id 'fabric-loom' version '1.1-SNAPSHOT'
     id 'maven-publish'
+    id 'com.modrinth.minotaur' version '2.+'
 }
 
 version = project.mod_version
@@ -21,7 +22,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     // Fabric API. This is technically optional, but you probably want it anyway.
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+//    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
@@ -78,4 +79,12 @@ publishing {
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
     }
+}
+
+modrinth {
+    token = System.getenv('MODRINTH_TOKEN')
+    projectId = 'To7PiZHu'
+    versionNumber = "${project.version}"
+    uploadFile = remapJar
+    loaders = ['fabric']
 }

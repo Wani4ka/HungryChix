@@ -12,15 +12,14 @@
     "repo": "https://github.com/Wani4ka/HungryChix"
   },
   "license": "MIT",
-  "icon": "assets/HungryChix/icon.png",
+  "icon": "assets/hungry_chix/icon.png",
   "environment": "*",
   "entrypoints": {},
   "mixins": [
-    "HungryChix.mixins.json"
+    "hungry_chix.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.14",
-    "fabric": "*",
     "minecraft": "1.19.3"
   }
 }
