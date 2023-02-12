@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "hungry_chix",
+  "version": "${version}",
+  "name": "HungryChix",
+  "description": "Makes animals (such as cows, pigs, etc.) eat their favorite food when it's dropped as an item!",
+  "authors": [
+    "Wani4ka"
+  ],
+  "contact": {
+    "website": "https://linktr.ee/wani4ka",
+    "repo": "https://github.com/Wani4ka/HungryChix"
+  },
+  "license": "MIT",
+  "icon": "assets/HungryChix/icon.png",
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "HungryChix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}

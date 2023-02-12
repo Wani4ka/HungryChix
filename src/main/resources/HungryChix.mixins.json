@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.wani4ka.hungrychix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "base.AnimalEntityMixin",
+    "BeeEntityMixin",
+    "ChickenEntityMixin",
+    "CowEntityMixin",
+    "base.MobEntityMixin",
+    "base.PassiveEntityMixin",
+    "base.PathAwareEntityMixin",
+    "PigEntityMixin",
+    "RabbitEntityMixin",
+    "SheepEntityMixin",
+    "TurtleEntityMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
